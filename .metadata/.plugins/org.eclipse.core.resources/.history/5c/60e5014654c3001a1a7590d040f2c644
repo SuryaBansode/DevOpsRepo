@@ -1,0 +1,11 @@
+package service;
+
+import org.springframework.stereotype.Component;
+
+@Component
+class WelcomeService {
+	public String retrieveWelcomeMessage(int fNo, int sNo) {
+		int total = fNo + sNo;
+		return "Good Morning, Addition is:" + total ;
+	}
+}
